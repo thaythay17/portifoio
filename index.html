@@ -55,19 +55,37 @@
 
         <h2 class="contato-titulo">Contatos</h2>
 
-        <form class="contato-formulario" id="formulario">
+        <form class="contato-formulario" id="formulario" onsubmit="enviarWa(event)">
             <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
             </div>
 
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua mensagem"></textarea>
+                <textarea class="campo-form" placeholder="Digite sua mensagem" id="mensagem"></textarea>
             </div>
 
             <button type="submit" class="botao-form">Enviar whatsapp</button>
         </form>
 
     </section>
+
+    <script>
+
+        function enviarWa(event) {
+             event.preventDefault();
+
+            const nome = document.getElementById('nome');
+            const mensagem = document.getElementById('mensagem');
+            const telefone = '5564992210923';
+
+            const texto = 'Olá, meu nome é ' + nome.value + ', '  + mensagem.value;
+            const msformatada = encodeURIComponent(texto);
+
+            const url = 'https://wa.me/' + telefone + '?text=' + msformatada;
+
+            window.open(url, '_blank');
+        }
+    </script>
 
 </body>
 </html>
