@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body> <!-- corpo do site --> 
+
+    <nav class="menu"> <!-- usado para criar o menu de navegação -->
+
+        <ul class="menu-list"> <!-- usado para criar uma lista de itens -->
+            <li> <!-- criado para cada item da lista -->
+                <a href="#inicio" class="link-menu">Início</a> 
+            </li>
+
+            <li>
+                <a href="#sobre" class="link-menu">sobre</a>
+            </li>
+
+            <li>
+                <a href="#contato" class="link-menu">contato</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main id="inicio" class="cabeca"> <!-- parte principal do site -->
+        <div class="caixa-perfil">
+            <img src="./gatinho.jpg" alt="foto da thaynara ribeiro silva" class="foto-perfil">
+        </div>
+
+        <div> <!-- usado para agrupar elementos e aplicar estilos a eles -->
+            <h1>Thaynara Ribeiro Silva</h1>
+            <p class="paragrafo-cabeca">Estudante de desenvolvimento de sistemas</p>
+        </div>
+
+    </main>
+
+    <section id="sobre" class="sobre"> <!-- usado para agrupar conteúdos que possuem uma relação lógica ou temática entre si -->
+
+        <h2 class="sobre-titulo">Sobre mim </h2>
+
+        <div class="sobre-cai"> <!-- div contêiner genérico usado para agrupar outros elementos HTML -->
+            <p class="sobre-paragrafo">Me chamo thaynara ribeiro silva, tenho 20 anos, e morro de saudades da minha ex.</p>
+                <audio id="musica" controls loop class="botao-form">
+    <source src="É Que Eu Não Te Esqueci.mp3" type="audio/mpeg"></audio>
+        </div>
+
+    </section>
+
+    <section id="contato" class="contato">
+
+        <h2 class="contato-titulo">Contatos</h2>
+
+        <form class="contato-formulario" id="formulario">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar whatsapp</button>
+        </form>
+
+    </section>
+
+</body>
+</html>
