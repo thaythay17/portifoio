@@ -24,6 +24,7 @@ body {
     background: radial-gradient(circle at top left, rgba(168,85,247,0.20), transparent 30%), 
     radial-gradient(circle at bottom right, rgba(236,72,153,0.20), transparent 30%), var(--fundo);
     color: var(--texto);
+    overflow-x: hidden;
 }
 
 .menu {
@@ -109,7 +110,7 @@ h1 {
 
 .sobre-cai {
     padding: 2rem;
-    max-width: 900px;
+    max-width: 400px;
     margin: 0 auto;
     border-radius: 16px;
     border: 1px solid var(--roxo-claro);
@@ -152,6 +153,7 @@ h1 {
     color: var(--roxo-escuro);
     border: 1px solid var(--roxo-escuro);
     outline: none;
+    resize: none;
 }
 
 .campo-form:focus {
@@ -187,5 +189,24 @@ h1 {
 
     50% {
         transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cabeca {
+        padding: 2rem;
+    }
+
+    .sobre-cai {
+        padding: 1rem;
+    }
+
+    .contato-formulario {
+        padding: 1rem;
     }
 }
