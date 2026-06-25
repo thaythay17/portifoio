@@ -28,8 +28,12 @@
                 <a href="#contato" class="link-menu">Contato</a>
             </li>
 
-            <button id="botao-tema">🌙</button>
-
+            <label class="botao">
+                <input type="checkbox" id="tema">
+                <span class="slider">
+                    <span class="texto"></span>
+                </span>
+            </label>
         </ul>
 
     </nav>
@@ -123,16 +127,10 @@
     </script>
 
     <script>
-        const botaoTema = document.getElementById("botao-tema");
-        botaoTema.addEventListener("click", () => {
-            document.body.classList.toggle("tema-escuro");
+        const tema = document.getElementById("tema");
 
-            if(document.body.classList.contains("tema-escuro")){
-                botaoTema.innerHTML = "☀️";
-            }
-            else {
-                botaoTema.innerHTML = "🌙";
-            }
+        tema.addEventListener("change", () => {
+            document.body.classList.toggle("tema-escuro");
         });
     </script>
 
