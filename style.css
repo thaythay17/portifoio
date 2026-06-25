@@ -269,74 +269,90 @@ body.tema-escuro .botao-form {
 
 @media (max-width:768px){
 
-    .menu{
+    .menu {
         padding:1rem;
     }
 
-    .menu-list{
+    .menu-list {
         gap:1rem;
         flex-wrap:wrap;
     }
 
-    .link-menu{
+    .link-menu {
         font-size:.9rem;
     }
 
-    .cabeca{
+    .cabeca {
         padding:7rem 1rem 2rem;
     }
 
-    .foto-perfil{
+    .foto-perfil {
         width:150px;
         height:150px;
     }
 
-    h1{
+    h1 {
         font-size:2rem;
     }
 
-    .paragrafo-cabeca{
+    .paragrafo-cabeca {
         font-size:1rem;
     }
 
-    .sobre{
+    .sobre {
         padding:4rem 1rem;
     }
 
-    .sobre-cai{
+    .sobre-cai {
         max-width:100%;
     }
 
-    .projetos{
+    .projetos {
         padding:4rem 1rem;
     }
 
-    .projetos-grid{
+    .projetos-grid {
         flex-direction:column;
         align-items:center;
     }
 
-    .projeto{
+    .projeto {
         width:100%;
         max-width:350px;
     }
 
-    .projeto1-imagem img{
+    .projeto1-imagem img {
         width:100%;
         height:auto;
     }
 
-    .contato{
+    .contato {
         padding:4rem 1rem;
     }
 
-    .contato-formulario{
+    .contato-formulario {
         width:100%;
     }
 
-    #botao-tema{
+    #botao-tema {
         top:75px;
         right:15px;
+    }
+
+    .switch {
+        top:70px;
+        right:15px;
+    }
+
+    .slider::before {
+        width:31px;
+        height:31px;
+    }
+
+    .texto {
+        width:31px;
+        height:31px;
+        font-size:.65rem;
     }
 }
 
