@@ -27,6 +27,9 @@
             <li>
                 <a href="#contato" class="link-menu">Contato</a>
             </li>
+
+            <button id="botao-tema">🌙</button>
+
         </ul>
 
     </nav>
@@ -117,6 +120,20 @@
 
             window.open(url, '_blank');
         }
+    </script>
+
+    <script>
+        const botaoTema = document.getElementById("botao-tema");
+        botaoTema.addEventListener("click", () => {
+            document.body.classList.toggle("tema-escuro");
+
+            if(document.body.classList.contains("tema-escuro")){
+                botaoTema.innerHTML = "☀️";
+            }
+            else {
+                botaoTema.innerHTML = "🌙";
+            }
+        });
     </script>
 
 </body>
