@@ -274,8 +274,8 @@ body.tema-escuro .botao-form {
     }
 
     .menu-list {
-        gap:1rem;
-        flex-wrap:wrap;
+        flex-direction:column;
+        gap:.8rem;
     }
 
     .link-menu {
