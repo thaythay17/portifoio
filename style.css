@@ -267,19 +267,80 @@ body.tema-escuro .botao-form {
     }
 }
 
-@media (max-width: 768px) {
-    .cabeca {
-        padding: 2rem;
+@media (max-width:768px){
+
+    .menu{
+        padding:1rem;
     }
 
-    .sobre-cai {
-        padding: 1rem;
+    .menu-list{
+        gap:1rem;
+        flex-wrap:wrap;
     }
 
-    .contato-formulario {
-        padding: 1rem;
+    .link-menu{
+        font-size:.9rem;
     }
-}.botao {
+
+    .cabeca{
+        padding:7rem 1rem 2rem;
+    }
+
+    .foto-perfil{
+        width:150px;
+        height:150px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    .paragrafo-cabeca{
+        font-size:1rem;
+    }
+
+    .sobre{
+        padding:4rem 1rem;
+    }
+
+    .sobre-cai{
+        max-width:100%;
+    }
+
+    .projetos{
+        padding:4rem 1rem;
+    }
+
+    .projetos-grid{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .projeto{
+        width:100%;
+        max-width:350px;
+    }
+
+    .projeto1-imagem img{
+        width:100%;
+        height:auto;
+    }
+
+    .contato{
+        padding:4rem 1rem;
+    }
+
+    .contato-formulario{
+        width:100%;
+    }
+
+    #botao-tema{
+        top:75px;
+        right:15px;
+    }
+}
+
+.botao {
     position: fixed;
     top: 20px;
     right: 20px;
