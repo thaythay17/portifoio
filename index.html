@@ -95,44 +95,19 @@
         <h2 class="contato-titulo">Entre em contato</h2>
 
         <form class="contato-formulario" id="formulario" onsubmit="enviarWa(event)">
-            <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="nome">
-            </div>
+          
+            <input type="text" id="nome" class="campo-form" placeholder="Digite nome">
+            <small id="erro-nome" class="erro"></small>
 
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua mensagem" id="mensagem"></textarea>
-            </div>
+            <textarea id="mensagem" class="campo-form" placeholder="Digite sua mensagem"></textarea>
+            <small id="erro-mensagem" class="erro"></small>
 
             <button type="submit" class="botao-form">Enviar whatsapp</button>
         </form>
 
     </section>
 
-    <script>
-
-        function enviarWa(event) {
-             event.preventDefault();
-
-            const nome = document.getElementById('nome');
-            const mensagem = document.getElementById('mensagem');
-            const telefone = '5564992210923';
-
-            const texto = 'Olá, meu nome é ' + nome.value + ', '  + mensagem.value;
-            const msformatada = encodeURIComponent(texto);
-
-            const url = 'https://wa.me/' + telefone + '?text=' + msformatada;
-
-            window.open(url, '_blank');
-        }
-    </script>
-
-    <script>
-        const tema = document.getElementById("tema");
-
-        tema.addEventListener("change", () => {
-            document.body.classList.toggle("tema-escuro");
-        });
-    </script>
+    <script src="index.js"></script>
 
 </body>
 </html>

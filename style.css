@@ -42,7 +42,7 @@ body {
 
 body.tema-escuro {
     background: radial-gradient(circle at top left, rgba(168,85,247,0.10), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(236,72,153,0.10), transparent 30%) var(--fundo);
+    radial-gradient(circle at bottom right, rgba(236,72,153,0.10), transparent 30%), var(--fundo);
 }
 
 .menu {
@@ -334,19 +334,19 @@ body.tema-escuro .botao-form {
         width:100%;
     }
 
-    #botao-tema {
+    .botao {
         top:75px;
         right:15px;
     }
 
-    .switch {
+    .botao {
         width:70px;
         height:35px;
         right:10px;
         top:15px;
     }
 
-    .switch {
+    .botao {
         top:70px;
         right:15px;
     }
@@ -434,4 +434,13 @@ body.tema-escuro .botao-form {
 
 .botao input:checked + .slider .texto::after {
     content: "🌞";
+}
+
+.erro {
+    display: block;
+    color: #ef4444;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-left: 5px;
+    min-height: 20px;
 }
